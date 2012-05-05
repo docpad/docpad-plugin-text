@@ -1,0 +1,34 @@
+{
+	"name": "docpad-plugin-text",
+	"version": "1.0.0",
+	"description": "Allows you to render templateData with HTML elements",
+	"homepage": "https://github.com/bevry/docpad-extras",
+	"keywords": [
+		"docpad",
+		"docpad-plugin",
+		"text",
+		"render",
+        "rendering",
+        "renderer",
+        "templating"
+	],
+    "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+    "maintainers": [
+        "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
+    ],
+    "contributors": [
+        "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
+    ],
+    "bugs": {
+        "url": "https://github.com/bevry/docpad-extras/issues"
+    },
+    "repository" : {
+        "type": "git",
+        "url": "http://github.com/bevry/docpad-extras.git"
+    },
+    "engines" : {
+        "node": ">=0.4.0",
+        "docpad": "5.x"
+    },
+	"main": "./text.plugin.coffee"
+}
