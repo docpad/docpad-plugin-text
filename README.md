@@ -9,6 +9,8 @@ E.g. if you have this in your `docpad.cson`
 		firstname: 'Benjamin'
 		lastname: 'Lupton'
 		fullname: '<t>firstname</t> <t>lastname</t>'
+		markdownExample: '<t render="markdown">this is so **awesome**</t>'
+		markdownEcoExample: '<t render="md.eco">here is a random number: **<%- Math.random() %>**</t>'
 }
 ```
 
@@ -18,6 +20,8 @@ Doing the following inside a document:
 My creator's firstname is: <t>firstname</t>
 My creator's lastname is: <t>lastname</t>
 My creator's fullname is: <t>fullname</t>
+The markdown example is: <t>markdownExample</t>
+The markdown eco example is: <t>markdownEcoExample</t>
 ```
 
 Will output:
@@ -26,9 +30,13 @@ Will output:
 My creator's firstname is: Benjamin
 My creator's lastname is: Lupton
 My creator's fullname is: Benjamin Lupton
+The markdown example is: this is so <strong>awesome</strong>
+The markdown eco example is: here is a random number: <strong>0.5123213213123</strong>
 ```
 
 Which is incredibly useful for abstracting out common generic pieces of text from your templates and placing them inside your configuration files. A common use case for this is easy configurability of skeletons, as well as easier translation of your website.
+
+If you are embedding a text block in a text block, it is best that you name your text block like so `<t:myName>blah</t:myName>` that way our parser won't get confused as easily :)
 
 
 ## Install
