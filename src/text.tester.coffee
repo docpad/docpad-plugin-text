@@ -7,4 +7,4 @@ module.exports = (testers) ->
 			enabledPlugins:
 				'text': true
 				'eco': true
-				'markdown': true
+				'marked': true

@@ -1,7 +1,12 @@
 ## History
 
+- v2.2.0 January 5, 2012
+	- Added support for specifying the render attribute via the `t` template helper. Usage `@t('*markdown*', {render:'markdown'})`.
+	- Updated [bal-util](https://github.com/bevry/) dependency form v1.13 to v1.15
+	- Updated [coffee-script](http://coffeescript.org/) dev dependency form v1.3 to v1.4
+
 - v2.1.3 August 19, 2012
-	- Upgraded [bal-util](https://github.com/balupton/bal-util) dependency from v1.12 to v1.13.2+
+	- Updated [bal-util](https://github.com/balupton/bal-util) dependency from v1.12 to v1.13
 		- Fixed an issue where `<title>` elements would be treated as text elements
 			- Added tests against this
 	- Added `t` template helper

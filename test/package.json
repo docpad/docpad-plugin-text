@@ -4,6 +4,6 @@
 	"private": true,
 	"dependencies": {
 		"docpad-plugin-eco": "latest",
-		"docpad-plugin-markdown": "latest"
+		"docpad-plugin-marked": "latest"
 	}
 }

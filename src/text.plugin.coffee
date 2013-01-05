@@ -90,9 +90,14 @@ module.exports = (BasePlugin) ->
 			{templateData} = opts
 
 			# Apply
-			templateData.t = (text) ->
-				random = String(Math.random()).replace('.','')
-				return "<t:#{random}>#{text}</t:#{random}>"
+			templateData.t = (str,opts) ->
+				id = Math.random().toString().replace('.','')
+				attrs = ''
+				if opts.render
+					opts.render = opts.render.toString().replace(/^['"]+|['"]+$/g,'')
+					attrs += " render=\"#{opts.render}\""
+				text = "<text:#{id}#{attrs}>#{str}</text:#{id}>"
+				return text
 
 			# Chain
 			@
