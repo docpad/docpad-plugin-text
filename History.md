@@ -1,5 +1,11 @@
 ## History
 
+- v2.2.1 March 7, 2013
+	- Repackaged
+	- Dependency upgrades
+		-  `bal-util` ~1.15.3 to ~1.16.8
+		-  `coffee-script` 1.4.x to ~1.4.0
+
 - v2.2.0 January 5, 2012
 	- Added support for specifying the render attribute via the `t` template helper. Usage `@t('*markdown*', {render:'markdown'})`.
 	- Updated [bal-util](https://github.com/bevry/) dependency form v1.13 to v1.15
