@@ -1,6 +1,6 @@
 {
 	"name": "docpad-plugin-text",
-	"version": "2.2.1",
+	"version": "2.2.2",
 	"description": "Allows you to render templateData with HTML elements",
 	"homepage": "http://docpad.org/plugin/text",
 	"keywords": [
@@ -31,10 +31,10 @@
 		"docpad": ">=6.1 <7"
 	},
 	"dependencies": {
-		"bal-util": "~1.16.8"
+		"bal-util": "~1.18.0"
 	},
 	"devDependencies": {
-		"coffee-script": "~1.4.0"
+		"coffee-script": "~1.6.2"
 	},
 	"main": "./out/text.plugin.js",
 	"scripts": {
