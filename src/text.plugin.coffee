@@ -28,6 +28,7 @@ module.exports = (BasePlugin) ->
 			me = @
 			docpad = @docpad
 			balUtil = require('bal-util')
+			{TaskGroup} = require('taskgroup')
 			{source,templateData,file} = opts
 
 			# Prepare the replace element
@@ -36,11 +37,11 @@ module.exports = (BasePlugin) ->
 				result = me.getText({source:innerHTML,store:templateData})
 
 				# Prepare replace element tasks
-				replaceElementTasks = new balUtil.Group (err) ->
+				replaceElementTasks = new TaskGroup().once 'complete', (err) ->
 					return replaceElementCompleteCallback(err,result)
 
 				# Facilate deep elements
-				replaceElementTasks.push (complete) ->
+				replaceElementTasks.addTask (complete) ->
 					# Populate the value
 					me.populateText {file,templateData,source:result}, (err,populateTextResult) ->
 						return complete(err)  if err
@@ -51,7 +52,7 @@ module.exports = (BasePlugin) ->
 				extensions = balUtil.getAttribute(attributes,'type') or balUtil.getAttribute(attributes,'render') or ''
 				if extensions
 					# Render the text as a document with extensions
-					replaceElementTasks.push (complete) ->
+					replaceElementTasks.addTask (complete) ->
 						# Generate filename
 						filename = 'docpad-text-plugin'
 						parentExtension = file.get('outExtension') or file.get('extensionRendered') # b/c
@@ -74,8 +75,8 @@ module.exports = (BasePlugin) ->
 							result = renderTextResult
 							return complete()
 
-				# Run replace element tasks
-				replaceElementTasks.sync()
+				# Run tasks in serial
+				replaceElementTasks.run()
 
 			# Render the elements
 			balUtil.replaceElementAsync(source, 't(?:ext)?', replaceElementCallback, next)
