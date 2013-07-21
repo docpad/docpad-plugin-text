@@ -46,7 +46,7 @@ If you are embedding a text block into a text block, it is best that you name yo
 
 To use it with [coffeekup](http://coffeekup.org/) you'll do it like so `tag 'text', {render:"md"}, "your **markdown** content"`. [More info here.](https://github.com/bevry/docpad/issues/194#issuecomment-11363441).
 
-Alternatively, you can use the `t` template helper like so `@t('*markdown*', {render="markdown"})`
+Alternatively, you can use the `t` template helper like so `@t('*markdown*', {render:"markdown"})`
 
 
 ## Install
