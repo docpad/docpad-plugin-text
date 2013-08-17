@@ -26,7 +26,7 @@ If you have this in your `docpad.cson`
 		lastname: 'Lupton'
 		fullname: '<t>firstname</t> <t>lastname</t>'
 		markdownExample: '<t render="markdown">this is so **awesome**</t>'
-		markdownEcoExample: '<t render="md.eco">here is a random number: **<%- Math.random() %>**</t>'
+		markdownEcoExample: '<t render="html.md.eco">here is a random number: **<%- Math.random() %>**</t>'
 }
 ```
 
