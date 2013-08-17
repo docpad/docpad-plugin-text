@@ -5,6 +5,11 @@ module.exports = (BasePlugin) ->
 		# Plugin name
 		name: 'text'
 
+		# Plugin config
+		config:
+			matchElementRegexString: 't(?:ext)?'
+			preferredElement: 't'
+
 		# Get the text
 		getText: (opts) ->
 			# Prepare
@@ -27,6 +32,7 @@ module.exports = (BasePlugin) ->
 			# Prepare
 			me = @
 			docpad = @docpad
+			config = @getConfig()
 			balUtil = require('bal-util')
 			{TaskGroup} = require('taskgroup')
 			{source,templateData,file} = opts
@@ -79,7 +85,7 @@ module.exports = (BasePlugin) ->
 				replaceElementTasks.run()
 
 			# Render the elements
-			balUtil.replaceElementAsync(source, 't(?:ext)?', replaceElementCallback, next)
+			balUtil.replaceElementAsync(source, config.matchElementRegexString, replaceElementCallback, next)
 
 			# Chain
 			@
@@ -88,6 +94,7 @@ module.exports = (BasePlugin) ->
 		extendTemplateData: (opts) ->
 			# Prepare
 			me = @
+			config = @getConfig()
 			{templateData} = opts
 
 			# Apply
@@ -97,7 +104,7 @@ module.exports = (BasePlugin) ->
 				if opts.render
 					opts.render = opts.render.toString().replace(/^['"]+|['"]+$/g,'')
 					attrs += " render=\"#{opts.render}\""
-				text = "<text:#{id}#{attrs}>#{str}</text:#{id}>"
+				text = "<#{config.preferredElement}:#{id}#{attrs}>#{str}</#{config.preferredElement}:#{id}>"
 				return text
 
 			# Chain

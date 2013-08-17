@@ -1,5 +1,9 @@
 ## History
 
+- v2.3.0 August 17, 2013
+	- Can now customise the preferred element, and the match element regex string to avoid conflicts with elements
+		- Thanks to [ssayan](https://github.com/ssayan) for [issue #4](https://github.com/docpad/docpad-plugin-text/issues/4)
+
 - v2.2.4 April 5, 2013
 	- Dependency upgrades
 	- Repackaged

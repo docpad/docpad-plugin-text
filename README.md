@@ -7,7 +7,17 @@
 
 This plugin allows you to render variables within `templateData` using text elements
 
-E.g. if you have this in your `docpad.cson`
+
+## Install
+
+``` bash
+docpad install text
+```
+
+
+## Usage
+
+If you have this in your `docpad.cson`
 
 ``` coffeescript
 {
@@ -49,8 +59,13 @@ To use it with [coffeekup](http://coffeekup.org/) you'll do it like so `tag 'tex
 Alternatively, you can use the `t` template helper like so `@t('*markdown*', {render:"markdown"})`
 
 
-## Install
-To use this plugin with DocPad, simply run `npm install docpad-plugin-text` inside your website's directory. You'd probably also want to add `"docpad-plugin-text": "latest"` to your `package.json` dependencies.
+## Configuration
+
+### `matchElementRegexString` defaults to `'t(?:ext)?'`
+What regex string should we use to find text elements. The default value will find `<t>` and `<text>` elements. If you use SVG, you may want to change this just to `t` to avoid [conflicts with the `text` element.](https://github.com/docpad/docpad-plugin-text/issues/4)
+
+### `preferredElement` defualts to `'t'`
+What element should be preferred when we are inject text elements with the `t` template helper? The default value will inject `<t>` elements.
 
 
 ## History
