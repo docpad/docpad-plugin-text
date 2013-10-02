@@ -1,6 +1,6 @@
 {
 	"name": "docpad-plugin-text",
-	"version": "2.3.0",
+	"version": "2.3.1",
 	"description": "Allows you to render templateData with HTML elements",
 	"homepage": "http://docpad.org/plugin/text",
 	"keywords": [
@@ -27,12 +27,14 @@
 		"url": "http://github.com/bevry/docpad-extras.git"
 	},
 	"engines" : {
-		"node": ">=0.4",
+		"node": ">=0.4"
+	},
+	"peerDependencies": {
 		"docpad": ">=6.1 <7"
 	},
 	"dependencies": {
 		"bal-util": "~2.3.0",
-		"taskgroup": "~3.1.1"
+		"taskgroup": "~3.2.3"
 	},
 	"devDependencies": {
 		"coffee-script": "~1.6.2",

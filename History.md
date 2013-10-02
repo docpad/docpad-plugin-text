@@ -1,22 +1,25 @@
 ## History
 
+- v2.3.1 October 2, 2013
+	- Updated dependencies
+
 - v2.3.0 August 17, 2013
 	- Can now customise the preferred element, and the match element regex string to avoid conflicts with elements
 		- Thanks to [ssayan](https://github.com/ssayan) for [issue #4](https://github.com/docpad/docpad-plugin-text/issues/4)
 
 - v2.2.4 April 5, 2013
-	- Dependency upgrades
+	- Updated dependencies
 	- Repackaged
 
 - v2.2.3 April 5, 2013
-	- Dependency upgrades
+	- Updated dependencies
 
 - v2.2.2 April 1, 2013
-	- Dependency upgrades
+	- Updated dependencies
 
 - v2.2.1 March 7, 2013
 	- Repackaged
-	- Dependency upgrades
+	- Updated dependencies
 		-  `bal-util` ~1.15.3 to ~1.16.8
 		-  `coffee-script` 1.4.x to ~1.4.0
 
