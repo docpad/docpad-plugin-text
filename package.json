@@ -1,8 +1,18 @@
 {
   "name": "docpad-plugin-text",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "Allows you to render templateData with HTML elements",
   "homepage": "http://docpad.org/plugin/text",
+  "license": {
+    "type": "MIT"
+  },
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "gittip": "bevry",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6"
+  },
   "keywords": [
     "docpad",
     "docpad-plugin",
@@ -12,13 +22,11 @@
     "renderer",
     "templating"
   ],
-  "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "author": "2012+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
-  "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
-  ],
+  "contributors": [],
   "bugs": {
     "url": "https://github.com/bevry/docpad-extras/issues"
   },
@@ -33,11 +41,13 @@
     "docpad": ">=6.1 <7"
   },
   "dependencies": {
-    "bal-util": "~2.3.0",
-    "taskgroup": "~3.2.3"
+    "bal-util": "~2.3.2",
+    "taskgroup": "~3.3.1"
   },
   "devDependencies": {
-    "coffee-script": "~1.6.2"
+    "coffee-script": "~1.6.2",
+    "projectz": "~0.2.6",
+    "docpad": ">=6.1 <7"
   },
   "main": "./out/text.plugin.js",
   "scripts": {
