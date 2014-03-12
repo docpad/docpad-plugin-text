@@ -11,7 +11,9 @@
     "npm": true,
     "gittip": "bevry",
     "flattr": "344188/balupton-on-Flattr",
-    "paypal": "QB8GQPZAH84N6"
+    "paypal": "QB8GQPZAH84N6",
+    "david": true,
+    "daviddev": true
   },
   "keywords": [
     "docpad",
@@ -26,7 +28,10 @@
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
-  "contributors": [],
+  "contributors": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
+    "jeffbski (https://github.com/jeffbski)"
+  ],
   "bugs": {
     "url": "https://github.com/docpad/docpad-plugin-text/issues"
   },
@@ -35,18 +40,18 @@
     "url": "https://github.com/docpad/docpad-plugin-text.git"
   },
   "engines": {
-    "node": ">=0.4"
+    "node": ">=0.8"
   },
   "peerDependencies": {
     "docpad": ">=6.1 <7"
   },
   "dependencies": {
-    "bal-util": "~2.3.2",
+    "bal-util": "~2.4.1",
     "taskgroup": "~3.3.1"
   },
   "devDependencies": {
-    "coffee-script": "~1.6.2",
-    "projectz": "~0.2.6",
+    "coffee-script": "~1.7.1",
+    "projectz": "~0.3.11",
     "docpad": ">=6.1 <7"
   },
   "main": "./out/text.plugin.js",
