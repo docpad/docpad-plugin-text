@@ -9,9 +9,13 @@
   "badges": {
     "travis": true,
     "npm": true,
-    "gittip": "bevry",
+    "david": true,
+    "daviddev": true,
+    "gittip": "docpad",
     "flattr": "344188/balupton-on-Flattr",
-    "paypal": "QB8GQPZAH84N6"
+    "paypal": "QB8GQPZAH84N6",
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
   },
   "keywords": [
     "docpad",
@@ -26,7 +30,10 @@
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
-  "contributors": [],
+  "contributors": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
+    "jeffbski (https://github.com/jeffbski)"
+  ],
   "bugs": {
     "url": "https://github.com/docpad/docpad-plugin-text/issues"
   },
@@ -46,11 +53,14 @@
   },
   "devDependencies": {
     "coffee-script": "~1.6.2",
-    "projectz": "~0.2.6",
+    "projectz": "~0.3.13",
     "docpad": ">=6.1 <7"
   },
   "main": "./out/text.plugin.js",
   "scripts": {
     "test": "node ./out/text.test.js"
+  },
+  "cakeConfiguration": {
+    "COFFEE_SRC_PATH": "src"
   }
 }
