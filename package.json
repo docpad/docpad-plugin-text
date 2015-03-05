@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-text",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Allows you to render templateData with HTML elements",
   "homepage": "http://docpad.org/plugin/text",
   "license": {
@@ -15,7 +15,8 @@
     "flattr": "344188/balupton-on-Flattr",
     "paypal": "QB8GQPZAH84N6",
     "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
-    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V",
+    "npmdownloads": true
   },
   "keywords": [
     "docpad",
@@ -48,12 +49,12 @@
     "docpad": ">=6.1 <7"
   },
   "dependencies": {
-    "bal-util": "~2.3.2",
-    "taskgroup": "~3.3.1"
+    "bal-util": "~2.5.1",
+    "taskgroup": "^4.2.0"
   },
   "devDependencies": {
-    "coffee-script": "~1.6.2",
-    "projectz": "~0.3.13",
+    "coffee-script": "^1.9.1",
+    "projectz": "^0.5.0",
     "docpad": ">=6.1 <7"
   },
   "main": "./out/text.plugin.js",

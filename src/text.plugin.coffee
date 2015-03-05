@@ -43,7 +43,7 @@ module.exports = (BasePlugin) ->
 				result = me.getText({source:innerHTML,store:templateData})
 
 				# Prepare replace element tasks
-				replaceElementTasks = new TaskGroup().once 'complete', (err) ->
+				replaceElementTasks = new TaskGroup().done (err) ->
 					return replaceElementCompleteCallback(err,result)
 
 				# Facilate deep elements
