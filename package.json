@@ -3,9 +3,7 @@
   "version": "2.3.3",
   "description": "Allows you to render templateData with HTML elements",
   "homepage": "http://docpad.org/plugin/text",
-  "license": {
-    "type": "MIT"
-  },
+  "license": "MIT",
   "badges": {
     "travis": true,
     "npm": true,
