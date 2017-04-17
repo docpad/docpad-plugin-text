@@ -1,4 +1,4 @@
-## History
+# History
 
 ## v2.4.0 2017 April 17
 - Updated base files

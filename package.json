@@ -85,8 +85,8 @@
   ],
   "main": "es5/text.plugin.js",
   "dependencies": {
-    "bal-util": "~2.5.1",
-    "taskgroup": "^4.2.0"
+    "bal-util": "~2.6.0",
+    "taskgroup": "^5.0.1"
   },
   "devDependencies": {
     "coffee-script": "^1.12.5",
