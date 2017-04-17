@@ -1,4 +1,9 @@
-# Text Plugin for [DocPad](http://docpad.org)
+<!-- TITLE/ -->
+
+<h1>Text Plugin for DocPad</h1>
+
+<!-- /TITLE -->
+
 
 <!-- BADGES/ -->
 
@@ -21,14 +26,20 @@
 <!-- /BADGES -->
 
 
-This plugin allows you to render variables within `templateData` using text elements
+<!-- DESCRIPTION/ -->
+
+Allows you to render variables within `templateData` using text elements
+
+<!-- /DESCRIPTION -->
 
 
-## Install
+<!-- INSTALL/ -->
 
-``` bash
-docpad install text
-```
+<h2>Install</h2>
+
+Install this DocPad plugin by entering <code>docpad install text</code> into your terminal.
+
+<!-- /INSTALL -->
 
 
 ## Usage

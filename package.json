@@ -1,7 +1,8 @@
 {
+  "title": "Text Plugin for DocPad",
   "name": "docpad-plugin-text",
-  "version": "2.3.3",
-  "description": "Allows you to render templateData with HTML elements",
+  "version": "2.4.0",
+  "description": "Allows you to render variables within `templateData` using text elements",
   "homepage": "https://github.com/docpad/docpad-plugin-text",
   "license": "MIT",
   "keywords": [
