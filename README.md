@@ -32,13 +32,7 @@ Allows you to render variables within `templateData` using text elements
 <!-- /DESCRIPTION -->
 
 
-<!-- INSTALL/ -->
 
-<h2>Install</h2>
-
-Install this DocPad plugin by entering <code>docpad install text</code> into your terminal.
-
-<!-- /INSTALL -->
 
 
 ## Usage
@@ -93,6 +87,14 @@ What regex string should we use to find text elements. The default value will fi
 ### `preferredElement` defualts to `'t'`
 What element should be preferred when we are inject text elements with the `t` template helper? The default value will inject `<t>` elements.
 
+
+<!-- INSTALL/ -->
+
+<h2>Install</h2>
+
+Install this DocPad plugin by entering <code>docpad install text</code> into your terminal.
+
+<!-- /INSTALL -->
 
 <!-- HISTORY/ -->
 
